@@ -1,0 +1,13 @@
+card_A = {'Ad':('A dice', 50),'Af':('A flower', 50),'As':('A spade', 50),'Ah':('A heart', 50)}
+card_2 = {'2d':('2 dice', 20),'2f':('2 flower', 20),'2s':('2 spade', 20),'2h':('2 heart', 20)}
+card_3 = {'3d':('3 dice', 30),'3f':('3 flower', 30),'3s':('3 spade', 30),'3h':('3 heart', 30)}
+card_4 = {'4d':('4 dice', 4),'4f':('4 flower', 4),'4s':('4 spade', 4),'4h':('4 heart', 4)}
+card_5 = {'5d':('5 dice', 5),'5f':('5 flower', 5),'5s':('5 spade', 5),'5h':('5 heart', 5)}
+card_6 = {'6d':('6 dice', 6),'6f':('6 flower', 6),'6s':('6 spade', 6),'6h':('6 heart', 6)}
+card_7 = {'7d':('7 dice', 7),'7f':('7 flower', 7),'7s':('7 spade', 7),'7h':('7 heart', 7)}
+card_8 = {'8d':('8 dice', 8),'8f':('8 flower', 8),'8s':('8 spade', 8),'8h':('8 heart', 8)}
+card_9 = {'9d':('9 dice', 9),'9f':('9 flower', 9),'9s':('9 spade', 9),'9h':('9 heart', 9)}
+card_10 = {'10d':('10 dice', 10),'10f':('10 flower', 10),'10s':('10 spade', 10),'10h':('10 heart', 10)}
+card_J = {'Jd':('J dice', 11),'Jf':('J flower', 11),'Js':('J spade', 11),'Jh':('J heart', 11)}
+card_Q ={'Qd':('Q dice', 12),'Qf':('Q flower', 12),'Qs':('Q spade', 12),'Qh':('Q heart', 12)}
+card_K = {'Kd':('K dice', 13),'Kf':('K flower', 13),'Ks':('K spade', 13),'Kh':('K heart', 13)}

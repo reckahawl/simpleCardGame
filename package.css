@@ -1,0 +1,83 @@
+body{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-blend-mode: color-dodge;
+    background-color: none;
+    background-image: url("hh3.jpeg");
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: round;
+    background-size: auto;
+    box-decoration-break: slice;
+    box-sizing: border-box;
+    box-shadow: black;
+    scroll-behavior: smooth;
+}
+
+
+div {
+    border-bottom-left-radius: 20px;
+    border-bottom-color: black;
+    border-bottom-width: 30px;
+    border-left: 1px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: gold;
+    align-content: center;
+    align-items: auto;
+    align-self: auto;
+
+}
+span{
+    clear: none;
+    color: #000;
+    column-count: auto;
+    column-gap: normal;
+    cursor: pointer;
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-stretch: condensed;
+    font-style: italic;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+li{
+    list-style-image: none;
+    list-style-position: inside;
+    list-style-type: lower-roman;
+}
+section{
+    margin-top: auto;
+    margin-block-start: auto;
+    mask-image: url('h.jpeg');
+    cursor: crosshair;
+    max-height: fit-content;
+    max-width: fit-content;
+    background-color: aquamarine;
+    object-fit: contain;
+    object-position: auto;
+    overflow: unset;
+    overflow-wrap: normal;
+
+}
+
+main{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow-wrap: normal;
+    page-break-after: auto;
+    right: auto;
+    text-align: center;
+    text-decoration: wavy;
+    text-decoration-color: aliceblue;
+    text-shadow: #000;
+    text-emphasis: none;
+    text-indent: none;
+    text-justify: kashida;
+}
+
+img {
+    border-radius: 20px;
+}

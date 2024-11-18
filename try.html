@@ -1,0 +1,798 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <div class="container">
+	<header class="c-header c-header--archive c-header--project-list">
+		<div class="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
+			<ul class="c-mouse-vertical-carousel__list js-carousel-list">
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="0">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        01
+                    </span> Nevada
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Carson City
+						</p>
+					</a>
+				</li>
+
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="1">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        02
+                    </span> New Hampshire
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Concord
+						</p>
+					</a>
+				</li>
+
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="2">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        03
+                    </span> New York
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Albany
+						</p>
+					</a>
+				</li>
+
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="3">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        04
+                    </span> Oklahoma
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Oklahoma City
+						</p>
+					</a>
+				</li>
+
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="4">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        05
+                    </span> North Carolina
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Raleigh
+						</p>
+					</a>
+				</li>
+				
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="5">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        06
+                    </span> Utah
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Salt Lake City
+						</p>
+					</a>
+				</li>
+				
+				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="6">
+					<a href="">
+						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
+							<span>
+                        07
+                    </span> Missouri
+						</p>
+
+						<p class="c-mouse-vertical-carousel__title u-a5">
+							Jefferson City
+						</p>
+					</a>
+				</li>
+			</ul>
+
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://d39d4r6jmh1lz3.cloudfront.net/lass-id-original-1515801602-5a594c029dcd1.jpg')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.visittheusa.com/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2017-01/Getty_104106362_Brand_State_NewHampshire_Web72DPI.jpg?itok=-D2AFnPq')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.gousa.in/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2017-03/f13bafc9dbcd2df659faac33a29cf4ae.jpeg?itok=rj0Zoh1b')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://psmag.com/.image/t_share/MTU4NzUzMjc3MDkyMDQ2NTUy/gettyimages-1031626122.jpg')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.history.com/.image/t_share/MTU3ODc5MDg1ODk1NDYwMTY5/natural-bridge-bryce-canyon-utah-usa.jpg')"></i>
+			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.addictioncenter.com/app/uploads/2018/06/xMissouri.jpeg.pagespeed.ic.9qVaCJN2BK.jpg')"></i>
+			<i class="c-gradient-overlay"></i>
+		</div>
+	</header>
+</div>
+    <script src="try.js" defer></script>
+    <script >
+        document.addEventListener("DOMContentLoaded", function(){
+            new VericalMouseDrivenCarousel();
+        });
+    </script>
+</body>
+</html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url("/hhh3.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        nav {
+            background: #1b1b1b;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        nav .logo {
+            float: left;
+            color: white;
+            font-size: 27px;
+            font-weight: 600;
+            line-height: 70px;
+            padding-left: 60px;
+        }
+
+        nav ul {
+            float: right;
+            list-style: none;
+            margin-right: 40px;
+            position: relative;
+        }
+
+        nav ul li {
+            float: none;
+            display: inline-block;
+            background: black;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            line-height: 70px;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+
+        nav ul li a:hover {
+            color: cyan;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 90px;
+            opacity: 0;
+            visibility: hidden;
+            transition: top .3s;
+            z-index: 20;
+        }
+
+        nav ul li:hover > ul {
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        nav ul ul li {
+            position: relative;
+            margin: 0px;
+            width: 150px;
+            float: none;
+            display: list-item;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul ul li a {
+            line-height: 50px;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -70px;
+            left: 150px;
+        }
+
+        .slider-wrapper {
+            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 70px 55px;
+        }
+
+        .card-list .card-item {
+            color: white;
+            width: 400px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            background-color: rgb(218, 199, 115);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .card-list .card-item .user-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            border: 3px solid #fff;
+            padding: 4px;
+        }
+
+        .card-list .card-item .user-profession {
+            font-size: 1.15rem;
+            color: rgba(17, 4, 63, 0.541);
+            font-weight: 500;
+            margin: 14px 0 40px;
+        }
+
+        .card-list .card-item .message-button {
+            font-size: 1.25rem;
+            padding: 10px 35px;
+            color: #030720;
+            border-radius: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid transparent;
+            transition: 0.2s ease;
+        }
+
+        .card-list .card-item .message-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        aside {
+            width: 300px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            margin-top: 100px;
+            z-index: 5;
+        }
+
+        .aside-item {
+            margin-bottom: 20px;
+        }
+
+        .aside-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .aside-item span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HotelBook</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li>
+                        <a href="#">Pages</a>
+                        <ul>
+                            <li><a href="#">Sub-menu</a></li>
+                            <li><a href="#">Sub-menu</a></li>
+                            <li><a href="#">Sub-menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container swiper">
+            <div class="slider-wrapper swiper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="h.jpeg" alt="" class="user-image">
+                        <h2 class="user-name">Massai Mara</h2>
+                        <p class="user-profession">Travel Hotel Package</p>
+                        <button class="message-button">Get Your Package</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="hh2.jpeg" alt="" class="user-image">
+                        <h2 class="user-name">Massai Mara</h2>
+                        <p class="user-profession">Travel Hotel Package</p>
+                        <button class="message-button">Get Your Package</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="hhh.jpeg" alt="" class="user-image">
+                        <h2 class="user-name">Massai Mara</h2>
+                        <p class="user-profession">Travel Hotel Package</p>
+                        <button class="message-button">Get Your Package</button>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <aside>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span>This is Masai Mara Hotel</span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span>This is Masai Mara Hotel</span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span>This is Masai Mara Hotel</span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span>This is Masai Mara Hotel</span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span>Masai Mara Hotel</span>
+                <img src="h.jpeg" alt="">
+            </div>
+        </aside>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.slider-wrapper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                620: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+</html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            margin-top: 70px; /* Adjust to account for the nav height */
+            background: url("/hhh3.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        nav {
+            background: #1b1b1b;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            height: 70px;
+        }
+
+        nav:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        nav .logo {
+            float: left;
+            color: white;
+            font-size: 27px;
+            font-weight: 600;
+            line-height: 70px;
+            padding-left: 60px;
+        }
+
+        nav ul {
+            float: right;
+            list-style: none;
+            margin-right: 40px;
+            position: relative;
+            margin-top: 0;
+        }
+
+        nav ul li {
+            float: none;
+            display: inline-block;
+            background: black;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            line-height: 70px;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+
+        nav ul li a:hover {
+            color: cyan;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 70px;
+            opacity: 0;
+            visibility: hidden;
+            transition: top .3s;
+            z-index: 20;
+        }
+
+        nav ul li:hover > ul {
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        nav ul ul li {
+            position: relative;
+            margin: 0px;
+            width: 150px;
+            float: none;
+            display: list-item;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul ul li a {
+            line-height: 50px;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -70px;
+            left: 150px;
+        }
+
+        .slider-wrapper {
+            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 auto 55px;
+        }
+
+        .card-list .card-item {
+            color: white;
+            width: 400px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            background-color: rgb(218, 199, 115);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .card-list .card-item .user-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            border: 3px solid #fff;
+            padding: 4px;
+        }
+
+        .card-list .card-item .user-profession {
+            font-size: 1.15rem;
+            color: rgba(17, 4, 63, 0.541);
+            font-weight: 500;
+            margin: 14px 0 40px;
+        }
+
+        .card-list .card-item .message-button {
+            font-size: 1.25rem;
+            padding: 10px 35px;
+            color: #030720;
+            border-radius: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid transparent;
+            transition: 0.2s ease;
+        }
+
+        .card-list .card-item .message-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .card-list .card-item {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-list .card-item {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HotelBook</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Features</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li>
+                        <a href="#">Pages</a>
+                        <ul>
+                            <li><a href="#">Sub-menu</a></li>
+                            <li><a href="#">Sub-menu</a></li>
+                            <li><a href="#">Sub-menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container swiper">
+            <div class="slider-wrapper swiper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="h.jpeg" alt="" class="user-image">
+                        <h2 class="user-name">Massai Mara</h2>
+                        <p class="user-profession">Travel Hotel Package</p>
+                        <button class="message-button">Get Your Package</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="hh2.jpeg" alt="" class="user-image">
+                        <h2 class="user-name">Massai Mara</h2>
+                        <p class="user-profession">Travel Hotel Package</p>
+                        <button class="message-button">Get Your Package</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="hhh.jpeg" alt="" class="user-image">
+                        <h2 class="user-name">Massai Mara</h2>
+                        <p class="user-profession">Travel Hotel Package</p>
+                        <button class="message-button">Get Your Package</button>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <aside>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            <div class="aside-item">
+                <span><h3>Visit Masai Mara</h3></span>
+                <img src="h.jpeg" alt="">
+            </div>
+            
+        </aside>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.slider-wrapper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                620: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+</html>
+

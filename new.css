@@ -1,0 +1,299 @@
+/*
+
+li{
+    background: linear-gradient(to left, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    list-style: none;
+
+}
+li:hover{
+    background: linear-gradient(to bottom, gold, orange);
+}
+
+div h3{
+    text-align: center;
+    text-shadow: 5px 3px 2px blue;
+}
+h3:hover{
+    border: 5px solid;
+    background: linear-gradient(to right, grey, lightgrey);
+    cursor: grab;
+}
+
+p{
+    background: linear-gradient(to left, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+p:hover{
+    cursor: grab;
+    background: linear-gradient(to bottom, gold, orange);
+}
+
+.pack{
+    background: linear-gradient(to top, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 20px;
+
+    justify-content: center;
+    margin: 50px;
+    padding: 50px;
+}
+
+
+.pack{
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, gold, yellow);
+
+    right: auto;
+    position: right;
+    justify-content: center;
+    margin-left: 5px;
+}
+.park h3{
+    position: static;
+    justify-content: center;
+    align-content: center;
+}
+*/
+
+/* Existing styles */
+
+body {
+    background-image: url('ho0.jpeg');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+li .pa {
+    background: linear-gradient(to left, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 20px;
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+li:hover {
+    background: linear-gradient(to bottom, gold, orange);
+    font-family: "Matemasie";
+    cursor: alias;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+div h3 {
+    text-align: center;
+    text-shadow: 5px 3px 2px green;
+}
+
+h3:hover {
+    border: 5px solid;
+    border-radius: 10px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: auto;
+    font-style: normal;
+    background: linear-gradient(to right, white, lightgrey);
+    cursor: grab;
+}
+
+p {
+    background: linear-gradient(to left, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+
+p:hover {
+    cursor: grab;
+    background: linear-gradient(to bottom, rgb(211, 202, 151), white);
+    text-shadow: 2px 2px 2px blue;
+    text-decoration-color: aqua;
+    padding: 2px;
+    border: 3px green solid;
+    border-radius: 10px;
+    border-color: greenyellow;
+    font-family: "Matemasie";
+}
+
+.pack {
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, gold, yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+img:hover {
+    cursor: grab;
+    animation: 5s ease 0.5s infinite o;
+}
+
+.pack h3 {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+@keyframes o {
+    100% { opacity: 0%; }
+    80% { opacity: 20%; }
+    60% { opacity: 40%; }
+    40% { opacity: 60%; }
+    20% { opacity: 80%; }
+    0% { opacity: 100%; }
+}
+
+nav {
+    background: #1b1b1b;
+    position: relative;
+    z-index: 10;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: left;
+    list-style: none;
+    margin-left: 40px;
+    position: relative;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    z-index: 20;
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -50px;
+    right: 150px;
+}
+/* Existing styles */
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px; /* Adds space between items */
+    }
+
+    .pack {
+        /* Optional styles for individual items */
+        border-radius: 10px;
+        background: linear-gradient(to bottom, gold, yellow);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+/* Responsive styles 
+
+@media (min-width: 600px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Existing styles 
+
+/* Responsive styles 
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px; /* Adds space between items 
+    }
+
+    .pack {
+        /* Optional styles for individual items 
+        border-radius: 10px;
+        background: linear-gradient(to bottom, gold, yellow);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+*/
+
+

@@ -1,0 +1,146 @@
+Types of JavaScript Objects
+Here’s a comprehensive list of the most important types of JavaScript objects:
+
+1. Core Objects
+These objects are fundamental to JavaScript and are available globally.
+
+Object: Base object from which all other objects inherit.
+Function: A callable object that executes a block of code.
+Array: An ordered collection of values.
+String: Represents textual data.
+Number: Represents numerical values.
+Boolean: Represents a logical entity (true or false).
+Symbol: Represents a unique, immutable identifier.
+BigInt: For handling arbitrarily large integers.
+Date: Handles date and time.
+RegExp: Represents regular expressions.
+Error: Represents runtime errors.
+2. Built-in Global Objects
+These objects provide utility methods and properties.
+
+Math: Provides mathematical constants and functions.
+JSON: Handles parsing and stringifying JSON data.
+Promise: Represents the eventual completion (or failure) of an asynchronous operation.
+Map: A key-value store, where keys can be of any type.
+Set: A collection of unique values.
+WeakMap: A key-value store where keys are weakly referenced.
+WeakSet: A collection of unique values weakly referenced.
+3. Browser-Specific Objects
+These objects are specific to the browser environment.
+
+Window: Represents the browser's window.
+Document: Represents the HTML document loaded in the window.
+Navigator: Provides information about the user's browser.
+Screen: Represents the user's screen.
+History: Provides access to the browser’s session history.
+Location: Represents the URL of the document.
+Event: Represents an event in the DOM.
+HTMLElement: Represents elements in an HTML document (e.g., HTMLDivElement, HTMLSpanElement).
+4. Custom Objects
+You can create your own objects using:
+
+Object Literals:
+javascript
+Copy code
+const person = {
+    name: "John",
+    age: 30,
+    greet() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+Constructors:
+javascript
+Copy code
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+const john = new Person("John", 30);
+Classes:
+javascript
+Copy code
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+const jane = new Person("Jane", 25);
+5. Advanced Objects
+Proxy: Customizes the behavior of basic operations on an object.
+Reflect: Provides methods to intercept JavaScript operations.
+Intl: Handles internationalization (e.g., Intl.DateTimeFormat).
+Typed Arrays: Provides arrays for handling binary data (Uint8Array, Float32Array).
+Common Operations on Objects
+Create an Object
+Using an object literal:
+javascript
+Copy code
+const obj = { key: "value" };
+Using the Object constructor:
+javascript
+Copy code
+const obj = new Object();
+obj.key = "value";
+Access Properties
+Dot notation:
+javascript
+Copy code
+console.log(obj.key);
+Bracket notation:
+javascript
+Copy code
+console.log(obj["key"]);
+Add or Modify Properties
+javascript
+Copy code
+obj.newKey = "newValue";
+obj["newKey"] = "newValue";
+Delete Properties
+javascript
+Copy code
+delete obj.key;
+Iterate Over Properties
+Using for...in:
+javascript
+Copy code
+for (let key in obj) {
+    console.log(key, obj[key]);
+}
+Using Object.keys or Object.entries:
+javascript
+Copy code
+Object.keys(obj).forEach(key => console.log(key, obj[key]));
+Check for Property Existence
+javascript
+Copy code
+if ("key" in obj) {
+    console.log("Property exists!");
+}
+Copy Objects
+Using Object.assign:
+javascript
+Copy code
+const newObj = Object.assign({}, obj);
+Using the spread operator:
+javascript
+Copy code
+const newObj = { ...obj };
+Compare Objects
+Objects are compared by reference, not by value:
+
+javascript
+Copy code
+const obj1 = { a: 1 };
+const obj2 = { a: 1 };
+console.log(obj1 === obj2); // false
+Best Practices
+Use const for objects unless reassignment is required.
+Prefer object literals over constructors for simplicity.
+Use Object.freeze or Object.seal for immutability when needed.
+Leverage ES6 features like object destructuring and the spread operator for cleaner code.
+By mastering objects, you can work effectively with JavaScript’s flexible and powerful data structures.

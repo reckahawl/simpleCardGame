@@ -1,16 +1,147 @@
+/*
 body{
-    background: linear-gradient(to top, blue, grey);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: darkslateblue;
+}
+
+div{
+    padding: 2px;
+    margin: 5px;
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+
+}
+
+
+.debug{
+    background-color: red;
+
+    float: right;
+
+}
+
+.debug-console{
+    background-color: green;
+}*body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.table{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: absolute;
+}
+
+#player1{top: 0;left: 0;}
+#player2{top: 0;right: 0;}
+#player3{bottom: 0;left: 0;}
+#player4{bottom: 0;right: 0;}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0;
 }
 
 img{
-    max-width: 100px;
-    max-height: 200px;
+    width: 60px;
+    height: 90px;
+}
+.table{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-div .card-number{
-    display: flex;
+.button{
+    width: 100px;
+    height: 100px;
+}
+
+.player{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: absolute;
+}
 
 
+#player1{top: 0;left: 0;}
+#player2{top: 0;right: 0;}
+#player3{bottom: 0;left: 0;}
+#player4{bottom: 0;right: 0;}
+
+
+*/
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 1s ease-in-out, background-color 0.5s;
+}
+
+.box:hover {
+  width: 200px;
+  background-color: red;
+}
+
+.box1 {
+  float: right;  
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: transform 0.5s ease;
+}
+
+.box1:hover {
+  transform: translate(50px, 50px) rotate(20deg) scale(1.5); transform: rotate(15deg);
+  transform-origin:top right;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  gap: -40px;  
+  perspective: 1000px;  
+}
+
+.card {
+  width: 100px;
+  height: 140px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: bottom center;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-20px) scale(1.1);  
+  z-index: 10; 
+}
+
+.hand.reveal .card {
+  transform: rotateY(0deg); 
 }

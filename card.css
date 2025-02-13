@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(to top, blue, grey);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img{
+    max-width: 100px;
+    max-height: 200px;
+}
+
+div .card-number{
+    display: flex;
+
+
+}

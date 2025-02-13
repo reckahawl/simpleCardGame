@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+ .container {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+ .container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+ .container.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
+  
+ .container:hover.overlay {
+    display: block;
+  }
+</style>
+
+<!-- Header Bar -->
+<header style="background-color: #333; padding: 10px; text-align: center; position: relative;">
+  <a href="index.html" id="logo">
+    <img src="logo.png" alt="Logo" style="width: 100px; height: 50px; margin: 0 auto;">
+  </a>
+  <ul id="dropdown" style="display: none; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); background-color: #333; padding: 10px; border-radius: 5px; text-align: center;">
+    <li><a href="#">Option 1</a></li>
+    <li><a href="#">Option 2</a></li>
+    <li><a href="#">Option 3</a></li>
+  </ul>
+</header>
+
+<script>
+  document.getElementById('logo').addEventListener('click', function() {
+    document.getElementById('dropdown').style.display = 'block';
+  });
+  
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('#logo') &&!event.target.closest('#dropdown')) {
+      document.getElementById('dropdown').style.display = 'none';
+    }
+  });
+</script>
+
+<!-- Containers -->
+<div class="container-grid">
+  <div class="container">
+    <a href="page1.html">
+      <img src="image/top-left-image.png" alt="Image 1">
+      <div class="overlay">
+        <p>Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. Vivamus at dolor a nibh aliquet luctus.</p>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="page2.html">
+      <img src="image/top-right-image.png" alt="Image 2">
+      <div class="overlay">
+        <p>Pellentesque mattis tincidunt porttitor. Maecenas condimentum iaculis ligula, sit amet scelerisque nibh aliquam in. Quisque ornare gravida est ut fermentum.</p>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="page3.html">
+      <img src="image/bottom-left-image.png" alt="Image 3">
+      <div class="overlay">
+        <p>Donec laoreet dapibus ligula. Praesent orci leo, bibendum nec, ornare et, nonummy in, elit. Donec interdum feugiat leo.</p>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="page4.html">
+      <img src="image/bottom-right-image.png" alt="Image 4">
+      <div class="overlay">
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque feugiat ullamcorper ipsum.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<style>
+
+ .sidebar {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 10px;
+
+    height: 300px;
+
+    background-color: #f2f2f2;
+
+    padding: 10px;
+
+  }
+
+  
+
+ .grid-item {
+
+    background-color: #fff;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+  }
+
+  
+
+ .grid-item img {
+
+    width: 100%;
+
+    height: 100px;
+
+    object-fit: cover;
+
+  }
+
+  
+
+ .grid-item.overlay {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 20px;
+
+    display: none;
+
+  }
+
+  
+
+ .grid-item:hover.overlay {
+
+    display: block;
+
+  }
+
+</style>
+
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+  <div class="grid-item">
+
+    <a href="page1.html">
+
+      <img src="image/side-image1.png" alt="Image 1">
+
+      <div class="overlay">
+
+        <p>Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. Vivamus at dolor a nibh aliquet luctus.</p>
+
+      </div>
+
+    </a>
+
+  </div>
+
+  <div class="grid-item">
+
+    <a href="page2.html">
+
+      <img src="image/side-image2.png" alt="Image 2">
+
+      <div class="overlay">
+
+        <p>Pellentesque mattis tincidunt porttitor. Maecenas condimentum iaculis ligula, sit amet scelerisque nibh aliquam in. Quisque ornare gravida est ut fermentum.</p>
+
+      </div>
+
+    </a>
+
+  </div>
+</aside>
+<!--style>
+ .container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+ .container {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+ .container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+ .container.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
+  
+ .container:hover.overlay {
+    display: block;
+  }
+</style>
+
+
+<header style="background-color: #333; padding: 10px; text-align: center; position: relative;">
+  <a href="index.html" id="logo">
+    <img src="logo.png" alt="Logo" style="width: 100px; height: 50px; margin: 0 auto;">
+  </a>
+  <ul id="dropdown" style="display: none; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); background-color: #333; padding: 10px; border-radius: 5px; text-align: center;">
+    <li><a href="#">Option 1</a></li>
+    <li><a href="#">Option 2</a></li>
+    <li><a href="#">Option 3</a></li>
+  </ul>
+</header>
+
+<script>
+  document.getElementById('logo').addEventListener('click', function() {
+    document.getElementById('dropdown').style.display = 'block';
+  });
+  
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('#logo') &&!event.target.closest('#dropdown')) {
+      document.getElementById('dropdown').style.display = 'none';
+    }
+  });
+</script>
+
+<div class="container-grid">
+  <div class="container">
+    <a href="page1.html">
+      <img src="image/top-left-image.png" alt="Image 1">
+      <div class="overlay">
+        <p>Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. Vivamus at dolor a nibh aliquet luctus.</p>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="page2.html">
+      <img src="image/top-right-image.png" alt="Image 2">
+      <div class="overlay">
+        <p>Pellentesque mattis tincidunt porttitor. Maecenas condimentum iaculis ligula, sit amet scelerisque nibh aliquam in. Quisque ornare gravida est ut fermentum.</p>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="page3.html">
+      <img src="image/bottom-left-image.png" alt="Image 3">
+      <div class="overlay">
+        <p>Donec laoreet dapibus ligula. Praesent orci leo, bibendum nec, ornare et, nonummy in, elit. Donec interdum feugiat leo.</p>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="page4.html">
+      <img src="image/bottom-right-image.png" alt="Image 4">
+      <div class="overlay">
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque feugiat ullamcorper ipsum.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<style>
+ .container {
+    float: left;
+    width: 25%;
+    margin: 10px;
+    position: relative;
+  }
+  
+ .container img {
+    width: 100%;
+    height: 150px; /* reduced image size */
+    object-fit: cover;
+  }
+  
+ .container.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
+  
+ .container:hover.overlay {
+    display: block;
+  }
+</style>
+
+<header style="background-color: #333; padding: 10px; text-align: center; position: relative;">
+  <a href="index.html" id="logo">
+    <img src="logo.png" alt="Logo" style="width: 100px; height: 50px; margin: 0 auto;">
+  </a>
+  <ul id="dropdown" style="display: none; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); background-color: #333; padding: 10px; border-radius: 5px; text-align: center;">
+    <li><a href="#">Option 1</a></li>
+    <li><a href="#">Option 2</a></li>
+    <li><a href="#">Option 3</a></li>
+  </ul>
+</header>
+
+<script>
+  document.getElementById('logo').addEventListener('click', function() {
+    document.getElementById('dropdown').style.display = 'block';
+  });
+  
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('#logo') &&!event.target.closest('#dropdown')) {
+      document.getElementById('dropdown').style.display = 'none';
+    }
+  });
+</script>
+
+<div class="container">
+  <a href="page1.html">
+    <img src="image/top-left-image.png" alt="Image 1">
+    <div class="overlay">
+      <p>Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. Vivamus at dolor a nibh aliquet luctus.</p>
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <a href="page2.html">
+    <img src="image/bottom-right-image.png" alt="Image 2">
+    <div class="overlay">
+      <p>Pellentesque mattis tincidunt porttitor. Maecenas condimentum iaculis ligula, sit amet scelerisque nibh aliquam in. Quisque ornare gravida est ut fermentum.</p>
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <a href="page3.html">
+    <img src="image/bottom-left-image.png" alt="Image 3">
+    <div class="overlay">
+      <p>Donec laoreet dapibus ligula. Praesent orci leo, bibendum nec, ornare et, nonummy in, elit. Donec interdum feugiat leo.</p>
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <a href="page4.html">
+    <img src="image/bottom-right-image.png" alt="Image 4">
+    <div class="overlay">
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque feugiat ullamcorper ipsum.</p>
+    </div>
+  </a>
+</div>
+
+header style="background-color: #333; padding: 10px; text-align: center; position: relative;">
+
+  <a href="index.html" id="logo">
+
+    <img src="logo.png" alt="Logo" style="width: 100px; height: 50px; margin: 0 auto;">
+
+  </a>
+
+  <ul id="dropdown" style="display: none; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); background-color: #333; padding: 10px; border-radius: 5px; text-align: center;">
+
+    <li><a href="#">Option 1</a></li>
+
+    <li><a href="#">Option 2</a></li>
+
+    <li><a href="#">Option 3</a></li>
+
+  </ul>
+
+</header>
+
+
+<script>
+
+  document.getElementById('logo').addEventListener('click', function() {
+
+    document.getElementById('dropdown').style.display = 'block';
+
+  });
+
+  
+
+  document.addEventListener('click', function(event) {
+
+    if (!event.target.closest('#logo') &&!event.target.closest('#dropdown')) {
+
+      document.getElementById('dropdown').style.display = 'none';
+
+    }
+
+  });
+
+</script>
+<body>
+   - Top left article 
+
+    <div style="float: left; width: 45%; margin: 0px 15px 15px 0px; position: relative;">
+
+    <img src="image/top-left-image.png" width="100%" />
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff;">
+
+        <p>Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. Vivamus at dolor a nibh aliquet luctus.</p>
+
+    </div>
+
+    </div>
+
+
+  - Top right article 
+
+    <div style="float: right; width: 45%; margin: 0px 0px 15px 15px; position: relative;">
+
+    <img src="image/top-right-image.png" width="100%" />
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff;">
+
+        <p>Pellentesque mattis tincidunt porttitor. Maecenas condimentum iaculis ligula, sit amet scelerisque nibh aliquam in. Quisque ornare gravida est ut fermentum.</p>
+
+    </div>
+
+    </div>
+
+
+    <br style="clear:both" />
+
+
+     Bottom left article 
+
+    <div style="float: left; width: 45%; margin: 0px 15px 15px 0px; position: relative;">
+
+    <img src="image/bottom-left-image.png" width="100%" />
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff;">
+
+        <p>Donec laoreet dapibus ligula. Praesent orci leo, bibendum nec, ornare et, nonummy in, elit. Donec interdum feugiat leo.</p>
+
+    </div>
+
+    </div>
+
+
+    Bottom right article 
+
+    <div style="float: right; width: 45%; margin: 0px 0px 15px 15px; position: relative;">
+
+    <img src="image/bottom-right-image.png" width="100%" />
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff;">
+
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque feugiat ullamcorper ipsum.</p>
+
+    </div>
+
+    </div>
+        - Top left article -
+        <div style="float: left; width: 45%; margin: 0px 15px 15px 0px;">
+        <img src="image/top-left-image.png" width="100%" />
+        <p>Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. Vivamus at dolor a nibh aliquet luctus.</p>
+        </div>
+
+        Top right article 
+    <div style="float: right; width: 45%; margin: 0px 0px 15px 15px;">
+    <img src="image/top-right-image.png" width="100%" />
+    <p>Pellentesque mattis tincidunt porttitor. Maecenas condimentum iaculis ligula, sit amet scelerisque nibh aliquam in. Quisque ornare gravida est ut fermentum.</p>
+    </div>
+
+    <br style="clear:both" />
+
+     -- Bottom left article -
+    <div style="float: left; width: 45%; margin: 0px 15px 15px 0px;">
+    <img src="image/bottom-left-image.png" width="100%" />
+    <p>Donec laoreet dapibus ligula. Praesent orci leo, bibendum nec, ornare et, nonummy in, elit. Donec interdum feugiat leo.</p>
+    </div>
+
+        <- Bottom right article -
+    <div style="float: right; width: 45%; margin: 0px 0px 15px 15px;">
+    <img src="image/bottom-right-image.png" width="100%" />
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque feugiat ullamcorper ipsum.</p>
+    </div>
+
+    <a href="page4.html" style="float: right; width: 45%; margin: 0px 0px 15px 15px; position: relative; display: block;">
+
+        <img src="image/bottom-right-image.png" width="100%" />
+
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; color: #fff;">
+
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque feugiat ullamcorper ipsum.</p>
+
+        </div>
+    </a>
+</body>
+</html -->
